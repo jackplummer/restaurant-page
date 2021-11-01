@@ -1,6 +1,5 @@
-import {createHeader, createNav} from './home';
+import {loadPage, renderHome} from './tabRender';
 import './style.css';
 
-const websiteContent = document.querySelector('#content');
-websiteContent.appendChild(createHeader());
-websiteContent.appendChild(createNav());
+renderHome();
+loadPage();

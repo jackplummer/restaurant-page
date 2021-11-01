@@ -1,32 +1,8 @@
-import { LibManifestPlugin } from "webpack";
+function createHomeContent() {
+  const para = document.createElement('div');
+  para.classList.add('para');
+  para.textContent = 'Here at the nice coffee cafe we make the nicest coffee in the world! Check out our menu and see how to contact us for more information on the links above!';
+  return para;
+}
 
-function createHeader() {
-  const header = document.createElement('div');
-  header.classList.add('header');
-  header.textContent = 'Restaurant Name';
-  return header;
-};
-
-function createNav() {
-  const navBar = document.createElement('div');
-  navBar.classList.add('nav-bar');
-
-  const home = document.createElement('div');
-  home.textContent = 'Home';
-
-  const menu = document.createElement('div');
-  menu.textContent = 'Menu';
-
-  const contact = document.createElement('div');
-  contact.textContent = 'Contact';
-  
-  navBar.appendChild(home);
-  navBar.appendChild(menu);
-  navBar.appendChild(contact);
-
-  return navBar;
-};
-
-
-
-export { createHeader, createNav }
+export {createHomeContent}
